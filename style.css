@@ -1,0 +1,1179 @@
+/* ============== FONT: MANROPE VARIABILE ============== */
+/* I file dei font sono in /fonts/ :
+   - Manrope-VariableFont_wght.ttf (variabile, asse wght 200–800)
+   - (opzionale) manrope-latin-ext-wght-normal.woff2
+*/
+@font-face{
+  font-family: "ManropeVar";
+  src:
+    url("fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+  /* Se aggiungi il WOFF2 variabile, mettilo PRIMA del TTF:
+     src: url("fonts/manrope-latin-ext-wght-normal.woff2") format("woff2-variations"),
+          url("fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+  */
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Mostra il menu lingue quando lo script aggiunge .show (mobile friendly) */
+.dropdown-menu.show { display: block; }
+
+/* Applica Manrope a tutto il sito */
+/* BASE */
+
+body {
+
+  margin: 0;
+
+  font-family: "ManropeVar", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif;
+
+  background-color: white;
+
+  color: #333;
+
+}
+
+a {
+
+  text-decoration: none;
+
+  color: #333;
+
+  font-weight: bold;
+
+}
+
+/* SKIP LINK */
+
+.skip-link {
+
+  position: absolute;
+
+  left: -999px;
+
+  top: auto;
+
+  width: 1px;
+
+  height: 1px;
+
+  overflow: hidden;
+
+}
+
+.skip-link:focus {
+
+  position: static;
+
+  width: auto;
+
+  height: auto;
+
+  margin: 10px;
+
+  padding: 10px;
+
+  background: #333;
+
+  color: #fff;
+
+  z-index: 10000;
+
+}
+
+/* HEADER */
+
+header {
+
+  background-color: #f8f8f8;
+
+  padding: 10px 20px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  border-bottom: 1px solid #ddd;
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1000;
+
+}
+
+.logo img {
+
+  height: 60px;
+
+}
+
+nav {
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+}
+
+.menu-toggle {
+
+  display: none;
+
+  flex-direction: column;
+
+  cursor: pointer;
+
+}
+
+.menu-toggle div {
+
+  width: 25px;
+
+  height: 3px;
+
+  background-color: #333;
+
+  margin: 4px 0;
+
+}
+
+nav ul {
+
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+
+  display: flex;
+
+  gap: 20px;
+
+}
+
+#nav-links a {
+
+  color: #333;
+
+  transition: color 0.3s ease;
+
+}
+
+#nav-links a:hover {
+
+  color: #e63946;
+
+} 
+
+.link-utili-page ul li a:hover {
+
+  color: #e63946;
+
+}
+
+.language-dropdown {
+
+  padding: 5px;
+
+  font-size: 14px;
+
+}
+
+/* HERO */
+
+/* HERO */
+.hero {
+  /* niente background qui: lo gestiamo con .hero-image */
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* nasconde l'animazione in ingresso */
+}
+
+/* overlay scuro esistente: resta valido */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.3);
+  z-index: 1;
+}
+
+/* layer immagine che entra da sinistra */
+.hero-image {
+  position: absolute;
+  inset: 0;
+  background-image: url('images/hero.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateX(-100%);                /* parte fuori a sinistra */
+  animation: heroSlideIn 900ms ease-out forwards;
+  z-index: 0; /* sotto overlay e testi */
+}
+
+/* contenitore testi */
+.hero-inner {
+  position: relative;
+  z-index: 2;           /* sopra overlay */
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  gap: 10px;
+}
+
+/* H1: appare dal basso e si ferma a metà */
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 5px;   /* distanza ridotta dal paragrafo */
+  color: #fff;
+  opacity: 0;
+  animation: heroTitleRise 900ms 200ms cubic-bezier(.2,.7,.2,1) forwards;
+}
+
+.hero p {
+  font-size: 2.2em;
+  color: #fff;
+  opacity: 0;
+  transform: scale(0.8);
+  font-family: 'Dancing Script', cursive;
+  animation: zoomIn 700ms 400ms ease-out forwards;
+}
+/* Keyframes */
+@keyframes heroSlideIn {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(0); }
+}
+
+/* Nuova animazione per il titolo */
+@keyframes heroTitleRise {
+  from { transform: translateY(100%); opacity: 0; }  /* parte da fuori, sotto */
+  70%  { transform: translateY(-5%); opacity: 1; }   /* rimbalzo leggero */
+  to   { transform: translateY(0); opacity: 1; }     /* si ferma a metà sezione */
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+/* Riduci movimento per chi lo preferisce */
+@media (prefers-reduced-motion: reduce) {
+  .hero-image,
+  .hero h1,
+  .hero p {
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
+.hero h1,
+
+.hero p {
+
+  position: relative;
+
+  z-index: 2;
+
+}
+
+/* SECTIONS */
+
+.section {
+
+  padding: 40px 20px;
+
+  max-width: 1000px;
+
+  margin: auto;
+
+}
+
+.section:not(:last-of-type)::after {
+
+  content: "";
+
+  display: block;
+
+  width: 50%;
+
+  height: 2px;
+
+  background-color: red;
+
+  margin: 30px auto;
+
+} 
+
+/* FOOTER */
+
+footer {
+
+  background-color: #f8f8f8;
+
+  padding: 20px;
+
+  text-align: center;
+
+  border-top: 1px solid #ddd;
+
+  font-size: 14px;
+
+  color: #555;
+
+}
+
+footer a {
+
+  color: #007BFF;
+
+  text-decoration: none;
+
+}
+
+footer a:hover {
+
+  text-decoration: underline;
+
+}
+
+/* FORM */
+
+form input,
+
+form textarea {
+
+  width: 100%;
+
+  padding: 10px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 4px;
+
+  font-size: 16px;
+
+  box-sizing: border-box;
+
+  margin-bottom: 10px;
+
+}
+
+form button {
+
+  padding: 10px;
+
+  background-color: #333;
+
+  color: #fff;
+
+  border: none;
+
+  cursor: pointer;
+
+  border-radius: 4px;
+
+  font-size: 16px;
+
+}
+
+#availability form .contact-button {
+
+  display: block;
+
+  margin: 20px auto;
+
+}
+
+form label {
+
+  font-weight: normal;
+
+  color: #333;
+
+  display: block;
+
+  margin-bottom: 5px;
+
+}
+
+form input[type="checkbox"] {
+
+  transform: scale(1.2);
+
+  margin-right: 5px;
+
+}
+
+form a {
+
+  color: #007BFF;
+
+  text-decoration: underline;
+
+}
+
+.privacy-box {
+
+    display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  background-color: transparent;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 0;
+
+  font-size: 14px;
+
+  margin-top: 10px;
+
+  white-space: normal;
+
+}
+
+.privacy-box input[type="checkbox"] {
+
+  flex-shrink: 0;
+
+  width: 18px;
+
+  height: 18px;
+
+  accent-color: #4CAF50; /* verde opzionale, puoi cambiarlo */
+
+}
+
+.privacy-box span {
+
+  display: inline;
+
+  white-space: nowrap;
+
+}
+
+.privacy-box a {
+
+  color: #4CAF50;
+
+  text-decoration: underline;
+
+}
+
+/* GALLERY */
+
+.gallery-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 15px;
+
+}
+
+.gallery-grid img {
+
+  width: 100%;
+
+  height: auto;
+
+  aspect-ratio: 4/3;
+
+  border-radius: 5px;
+
+  object-fit: cover;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
+  transition: transform 0.3s ease;
+
+}
+
+.gallery-grid img:hover {
+
+  transform: scale(1.05);
+
+}
+
+/* MAP PLACEHOLDER */
+
+.map-placeholder {
+
+  background-color: #e0e0e0;
+
+  border: 1px solid #ccc;
+
+  text-align: center;
+
+  padding: 40px;
+
+  border-radius: 5px;
+
+}
+
+.map-placeholder button {
+
+  margin-top: 20px;
+
+  background-color: #333;
+
+  color: #fff;
+
+  border: none;
+
+  padding: 10px 20px;
+
+  cursor: pointer;
+
+  border-radius: 4px;
+
+  font-size: 16px;
+
+}
+
+/* --- ICON SIZE --- */
+
+.contact-icon {
+
+  width: 48px;
+
+  height: 48px;
+
+  margin: 0 8px;
+
+}
+
+body::before {
+
+  content: "";
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background-image: url('images/Tree.png');
+
+  background-repeat: no-repeat;
+
+  background-position: center center;
+
+  background-size: 300px auto;
+
+  opacity: 0.07;
+
+  pointer-events: none;
+
+  z-index: -1;
+
+} 
+
+    
+
+.contact-button {
+
+  display: inline-block;
+
+  background-color: #e63946;
+
+  color: white;
+
+  padding: 12px 24px;
+
+  border-radius: 6px;
+
+  font-size: 16px;
+
+  margin-top: 10px;
+
+  text-decoration: none;
+
+  transition: background-color 0.3s ease;
+
+}
+
+.contact-button:hover {
+
+  background-color: #d62828;
+
+} 
+
+.gallery-button {
+
+  display: inline-block;
+
+  background-color: #e63946;
+
+  color: white;
+
+  padding: 12px 24px;
+
+  border-radius: 6px;
+
+  font-size: 16px;
+
+  margin-top: 10px;
+
+  text-decoration: none;
+
+  transition: background-color 0.3s ease;
+
+} 
+
+.gallery-button:hover {
+
+  background-color: #d62828;
+
+}
+
+.language-flags {
+
+  display: flex;
+
+  gap: 8px;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+}
+
+.language-flags img {
+
+  width: 28px;
+
+  height: auto;
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease;
+
+}
+
+.language-flags img:hover {
+
+  transform: scale(1.1);
+
+} 
+
+.language-dropdown {
+
+  position: relative;
+
+  display: inline-block;
+
+}
+
+.dropdown-toggle {
+
+  background-color: transparent;
+
+  border: none;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  font-size: 14px;
+
+}
+
+.dropdown-toggle img {
+
+  width: 24px;
+
+  height: auto;
+
+}
+
+.dropdown-menu {
+
+  display: none;
+
+  position: absolute;
+
+  right: 0;
+
+  top: 100%;
+
+  background-color: white;
+
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+  border-radius: 6px;
+
+  padding: 8px 0;
+
+  z-index: 999;
+
+  min-width: 160px;
+
+}
+
+.dropdown-menu a {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 8px 16px;
+
+  color: #333;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition: background-color 0.2s ease;
+
+}
+
+.dropdown-menu a:hover {
+
+  background-color: #f0f0f0;
+
+}
+
+/* Linea rossa sotto l'h1 nella pagina link-utili.html */
+
+.link-utili-page h1::after {
+
+  content: "";
+
+  display: block;
+
+  width: 50%;
+
+  height: 2px;
+
+  background-color: red;
+
+  margin: 20px auto 30px;
+
+}
+
+/* Linea rossa sopra il bottone nella pagina link-utili.html */
+
+.link-utili-page .button-wrapper::before {
+
+  content: "";
+
+  display: block;
+
+  width: 50%;
+
+  height: 2px;
+
+  background-color: red;
+
+  margin: 30px auto 15px;
+
+} 
+
+.centered-title {
+
+  text-align:  center;
+
+  margin-bottom: 30px;
+
+  }
+
+  .section {
+
+  scroll-margin-top: 80px;
+
+}
+
+ :target {
+
+  scroll-margin-top: 90px;
+
+  }
+
+  @media (max-width: 768px) {
+
+    :target {
+
+      scroll-margin-top: 110px;
+
+    }
+
+} 
+
+  .cookie-banner {
+
+  position: fixed;
+
+  bottom: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  background: rgba(0, 0, 0, 0.9);
+
+  color: #fff;
+
+  padding: 12px 16px;
+
+  font-size: 14px;
+
+  text-align: center;
+
+  z-index: 9999;
+
+  display: none;
+
+  box-sizing: border-box;
+
+  line-height: 1.5;
+
+}
+
+.cookie-banner a {
+
+  color: #fff;
+
+  text-decoration: underline;
+
+}
+
+.cookie-banner-buttons {
+
+  margin-top: 10px;
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+}
+
+.cookie-banner button {
+
+  background: #4CAF50;
+
+  color: #fff;
+
+  border: none;
+
+  padding: 8px 14px;
+
+  border-radius: 4px;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+}
+
+.cookie-banner button#reject-cookies {
+
+  background: #f44336;
+
+}
+
+@media (max-width: 768px) {
+
+  .cookie-banner {
+
+    font-size: 13px;
+
+    padding: 14px 10px;
+
+  }
+
+  .cookie-banner-buttons {
+
+    flex-direction: column;
+
+    align-items: center;
+
+  }
+
+  .cookie-banner button {
+
+    width: 100%;
+
+    max-width: 220px;
+
+  }
+
+}
+
+/* Drawer baseline */
+.menu-backdrop { display: none; }
+.drawer-logo { display: none; }
+
+/* Mobile drawer menu */
+@media (max-width: 768px) {
+  .menu-toggle { display: flex; }
+  #nav-links .menu-image {
+    display: block;
+    width: 280px;
+    height: auto;
+    margin: 0 auto 10px;
+  }
+
+  /* Make only the main nav list a drawer (avoid touching other lists) */
+  nav ul#nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 60px 24px 120px; /* space at bottom for logo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* centered links */
+    text-align: center;
+    gap: 18px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: min(80vw, 320px);
+    background: #fff;
+    box-shadow: 2px 0 16px rgba(0,0,0,0.15);
+    transform: translateX(-100%);
+    transition: transform .3s ease;
+    z-index: 1001; /* above backdrop */
+  }
+
+  /* Tree image watermark inside the drawer only on mobile */
+  nav ul#nav-links::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('images/Tree.png');
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: 240px auto;
+    opacity: 0.08;
+    pointer-events: none;
+  }
+
+  /* Open state */
+  nav ul#nav-links.active { transform: translateX(0); }
+
+  /* Links above the watermark */
+  #nav-links a {
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+  }
+
+  /* Drawer logo shown only on mobile, fixed at the bottom of the drawer */
+  .drawer-logo {
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 20px;
+    width: min(80vw, 320px);
+    text-align: center;
+    z-index: 1;
+    pointer-events: none; /* clicks pass through */
+  }
+  .drawer-logo img {
+    height: 56px;
+    width: auto;
+    opacity: 0.95;
+  }
+
+  /* Backdrop */
+  .menu-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 1000; /* behind the drawer */
+  }
+  .menu-backdrop.show { display: block; }
+}
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-only img {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 20px;
+  }
+}
+/* Mouse/desktop: niente bordo blu al click */
+@media (hover: hover) and (pointer: fine) {
+  #nav-links a:focus,
+  .language-dropdown .dropdown-toggle:focus,
+  .language-dropdown .dropdown-menu a:focus {
+    outline: none;
+  }
+}
+
+/* Tastiera: mantieni un focus visibile e coerente */
+#nav-links a:focus-visible,
+.language-dropdown .dropdown-toggle:focus-visible,
+.language-dropdown .dropdown-menu a:focus-visible {
+  outline: 2px solid #666;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+/* Nascondi voce close su desktop */
+#nav-links .close-item { display: none; }
+
+/* Mostra e posiziona la "X" solo su mobile */
+@media (max-width: 768px) {
+  #nav-links { position: relative; } /* non rompe il drawer; se è già fixed, puoi togliere questa riga */
+  #nav-links .close-item { display: block; }
+
+  #nav-links .drawer-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+    line-height: 1;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  /* Coerenza accessibilità: niente bordo al click, focus chiaro con tastiera */
+  #nav-links .drawer-close:focus { outline: none; }
+  #nav-links .drawer-close:focus-visible {
+    outline: 2px solid #666;
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+}
+/* Solo dispositivi touch: niente bordo/blu al tap sul selettore lingue */
+@media (hover: none) and (pointer: coarse) {
+  .language-dropdown .dropdown-toggle,
+  .language-dropdown .dropdown-menu a {
+    -webkit-tap-highlight-color: transparent; /* iOS/Android: rimuove il flash di tap */
+  }
+  .language-dropdown .dropdown-toggle:focus,
+  .language-dropdown .dropdown-menu a:focus,
+  .language-dropdown .dropdown-toggle:active,
+  .language-dropdown .dropdown-menu a:active {
+    outline: none;
+    box-shadow: none;
+  }
+}
+/* Solo mobile/touch: togli highlight/outline ai link del drawer */
+@media (hover: none) and (pointer: coarse) {
+  #nav-links a { -webkit-tap-highlight-color: transparent; }
+  #nav-links a:focus,
+  #nav-links a:active {
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+  }
+}
+
+/* Touch devices: remove blue tap highlight/outline on action buttons */
+@media (hover: none) and (pointer: coarse) {
+  .contact-button, .gallery-button {
+    -webkit-tap-highlight-color: transparent;
+  }
+  .contact-button:focus,
+  .contact-button:active,
+  .gallery-button:focus,
+  .gallery-button:active {
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+  }
+}
+
+/* Gerarchia tipografica consigliata con Manrope */
+h1{ font-weight: 800; line-height: 1.2; }
+h2{ font-weight: 700; }
+nav a, .contact-button, label{ font-weight: 600; }
+
+/* Tighten: distanza tra H1 e P nella hero */
+.hero .hero-inner { gap: 5px; }      /* era 10px */
+.hero .hero-inner h1 { margin-bottom: 0; }  /* era 5px */
+.hero .hero-inner p { margin-top: 0; }      /* sicurezza: evita eventuali margin-top user agent */
+
+/* === Menu font normalization (added) === */
+/* Put the font on the nav container so all children inherit */
+header nav,
+.site-nav {
+  font-family: "ManropeVar", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif;
+}
+
+/* Ensure anchors, buttons and dropdown items inherit */
+header nav a,
+header nav button,
+.language-dropdown .dropdown-toggle,
+.language-dropdown .dropdown-menu a {
+  font: inherit;
+  line-height: inherit;
+}
+
+/* Reset default browser styles on nav buttons (e.g., language toggle) */
+header nav button,
+.language-dropdown .dropdown-toggle {
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* If there's a CTA or .btn inside the nav, inherit the same font */
+header nav .btn,
+header nav .cta {
+  font: inherit;
+}
+/* === End Menu font normalization === */
+
+/* Mobile menu: ensure same font as desktop */
+@media (max-width: 768px) {
+  nav ul#nav-links,
+  nav ul#nav-links a,
+  nav ul#nav-links button,
+  .language-dropdown .dropdown-toggle,
+  .language-dropdown .dropdown-menu a {
+    font-family: "ManropeVar", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif;
+    font: inherit;
+    line-height: inherit;
+  }
+}
+
+
+/* Make hamburger/toggle inherit the same font context */
+.menu-toggle { font: inherit; }
