@@ -1179,3 +1179,26 @@ header nav .cta {
 
 /* Make hamburger/toggle inherit the same font context */
 .menu-toggle { font: inherit; }
+
+/* === Cookie banner cross-browser hardening (additive) === */
+#cookie-banner {
+  position: fixed !important;
+  left: 0; right: 0; bottom: 0;
+  z-index: 2147483647; /* on top of everything */
+  transform: translateZ(0); /* mitigate iOS Safari fixed/transform bugs */
+  will-change: transform;
+  padding-bottom: calc(12px + env(safe-area-inset-bottom));
+}
+
+/* Make sure hidden overlays never steal taps */
+.menu-backdrop { pointer-events: none; }
+.menu-backdrop.show { pointer-events: auto; }
+
+/* If your drawer has a class/id, keep it non-interactive when closed.
+   These are generic safeguards and won't affect if the selectors don't exist. */
+.mobile-drawer:not(.open),
+#mobile-drawer:not(.open),
+.nav-drawer:not(.open),
+#nav-drawer:not(.open) {
+  pointer-events: none;
+}
