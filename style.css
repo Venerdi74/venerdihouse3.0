@@ -1,6 +1,6 @@
 /* ============== FONT: MANROPE VARIABILE ============== */
 /* I file dei font sono in /fonts/ :
-   - Manrope-VariableFont_wght.ttf (variabile, asse wght 200–800)
+   - Manrope-VariableFont_wght.ttf (variabile, asse wght 200â€“800)
    - (opzionale) manrope-latin-ext-wght-normal.woff2
 */
 @font-face{
@@ -233,7 +233,7 @@ nav ul {
   gap: 10px;
 }
 
-/* H1: appare dal basso e si ferma a metà */
+/* H1: appare dal basso e si ferma a metÃ  */
 .hero h1 {
   font-size: 2.5em;
   margin-bottom: 5px;   /* distanza ridotta dal paragrafo */
@@ -260,7 +260,7 @@ nav ul {
 @keyframes heroTitleRise {
   from { transform: translateY(100%); opacity: 0; }  /* parte da fuori, sotto */
   70%  { transform: translateY(-5%); opacity: 1; }   /* rimbalzo leggero */
-  to   { transform: translateY(0); opacity: 1; }     /* si ferma a metà sezione */
+  to   { transform: translateY(0); opacity: 1; }     /* si ferma a metÃ  sezione */
 }
 
 @keyframes zoomIn {
@@ -935,6 +935,7 @@ body::before {
 
 /* Drawer baseline */
 .menu-backdrop { display: none; }
+  pointer-events: none;
 .drawer-logo { display: none; }
 
 /* Mobile drawer menu */
@@ -1017,6 +1018,7 @@ body::before {
     inset: 0;
     background: rgba(0,0,0,0.35);
     z-index: 1000; /* behind the drawer */
+  pointer-events: none;
   }
   .menu-backdrop.show { display: block; }
 }
@@ -1055,7 +1057,7 @@ body::before {
 
 /* Mostra e posiziona la "X" solo su mobile */
 @media (max-width: 768px) {
-  #nav-links { position: relative; } /* non rompe il drawer; se è già fixed, puoi togliere questa riga */
+  #nav-links { position: relative; } /* non rompe il drawer; se Ã¨ giÃ  fixed, puoi togliere questa riga */
   #nav-links .close-item { display: block; }
 
   #nav-links .drawer-close {
@@ -1071,7 +1073,7 @@ body::before {
     cursor: pointer;
   }
 
-  /* Coerenza accessibilità: niente bordo al click, focus chiaro con tastiera */
+  /* Coerenza accessibilitÃ : niente bordo al click, focus chiaro con tastiera */
   #nav-links .drawer-close:focus { outline: none; }
   #nav-links .drawer-close:focus-visible {
     outline: 2px solid #666;
