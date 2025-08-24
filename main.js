@@ -231,3 +231,47 @@ window.loadMap = function(){
   });
 })();
 /* === End drawer hardening ======================================= */
+
+/* === Cookie banner cross-browser hardening (additive) === */
+(function () {
+  var btn = document.getElementById('open-cookie-settings');
+  var banner = document.getElementById('cookie-banner');
+  if (!btn || !banner) return;
+
+  function closeDrawerIfAny() {
+    try {
+      // Common selectors used in the site; harmless if not present
+      var backdrop = document.getElementById('menu-backdrop') || document.querySelector('.menu-backdrop');
+      var drawer   = document.getElementById('mobile-drawer') || document.querySelector('.mobile-drawer, .nav-drawer, #nav-drawer');
+      var body     = document.body;
+
+      if (drawer && drawer.classList.contains('open')) {
+        drawer.classList.remove('open');
+      }
+      if (backdrop && backdrop.classList.contains('show')) {
+        backdrop.classList.remove('show');
+      }
+      // Restore scroll in case menu code locked it
+      body.style.overflow = '';
+      body.classList.remove('menu-open');
+    } catch (e) {}
+  }
+
+  btn.addEventListener('click', function () {
+    closeDrawerIfAny();
+
+    // Ensure banner sits at the top document level to avoid stacking-context bugs
+    if (banner.parentElement !== document.body) {
+      document.body.appendChild(banner);
+    }
+
+    // Defensive styles for stubborn mobile browsers
+    banner.style.position = 'fixed';
+    banner.style.left = '0';
+    banner.style.right = '0';
+    banner.style.bottom = '0';
+    banner.style.zIndex = '2147483647';
+    banner.style.display = 'block';
+    banner.setAttribute('aria-hidden', 'false');
+  }, { passive: true });
+})();
