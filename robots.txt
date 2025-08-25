@@ -1,0 +1,11 @@
+User-agent: *
+# Blocca tutte le pagine di ringraziamento (tutte le lingue)
+Disallow: /thank-you.html
+Disallow: /*-thank-you.html
+
+# Blocca tutte le pagine privacy (tutte le lingue)
+Disallow: /privacy.html
+Disallow: /privacy-*.html
+
+# Sitemap
+Sitemap: https://venerdihouse.com/sitemap.xml
