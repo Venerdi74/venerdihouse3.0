@@ -138,7 +138,9 @@
 <form action="/thank-you.html" data-netlify="true" method="POST" name="contact-en" netlify-honeypot="bot-field">
 <input name="form-name" type="hidden" value="contact-en"/>
 <p hidden="">
-<label>Do not fill this field: </label>
+<label>Do not fill this field:
+<input name="bot-field"/>
+</label>
 </p>
 <label for="nome">Full name</label>
 <input autocomplete="name" id="nome" name="nome" required="" type="text"/>
