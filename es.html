@@ -135,8 +135,10 @@
 <h2>Solicitud de disponibilidad</h2>
 <form action="/es-thank-you.html" data-netlify="true" method="POST" name="contact-es" netlify-honeypot="bot-field">
 <input name="form-name" type="hidden" value="contact-es"/>
-<p hidden="">
-<label>No rellenes este campo: </label>
+<p hidden>
+<label>No rellenes este campo:
+<input name="bot-field"/>
+</label>
 </p>
 <label for="nome">Nombre y apellidos</label>
 <input autocomplete="name" id="nome" name="nome" required="" type="text"/>
