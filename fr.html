@@ -139,8 +139,10 @@ Climatisation, Wi-Fi gratuit et tout le confort pour un agréable séjour à Alg
 <h2>Demande de disponibilité</h2>
 <form action="/fr-thank-you.html" data-netlify="true" method="POST" name="contact-fr" netlify-honeypot="bot-field">
 <input name="form-name" type="hidden" value="contact-fr"/>
-<p hidden="">
-<label>Ne remplissez pas ce champ : </label>
+<p hidden>
+<label>Ne remplissez pas ce champ :
+<input name="bot-field"/>
+</label>
 </p>
 <label for="nome">Nom et Prénom</label>
 <input autocomplete="name" id="nome" name="nome" required="" type="text"/>
