@@ -137,8 +137,10 @@ Klimaanlage, kostenloses WLAN und alle Annehmlichkeiten sorgen für einen angene
 <h2>Verfügbarkeit anfragen</h2>
 <form action="/de-thank-you.html" data-netlify="true" method="POST" name="contact-de" netlify-honeypot="bot-field">
 <input name="form-name" type="hidden" value="contact-de"/>
-<p hidden="">
-<label>Bitte dieses Feld nicht ausfüllen: </label>
+<p hidden>
+<label>Bitte dieses Feld nicht ausfüllen:
+<input name="bot-field"/>
+</label>
 </p>
 <label for="nome">Vor- und Nachname</label>
 <input autocomplete="name" id="nome" name="nome" required="" type="text"/>
