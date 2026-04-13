@@ -240,32 +240,38 @@ window.loadMap = function(){
 
   function closeDrawerIfAny() {
     try {
-      // Common selectors used in the site; harmless if not present
-      var backdrop = document.getElementById('menu-backdrop') || document.querySelector('.menu-backdrop');
-      var drawer   = document.getElementById('mobile-drawer') || document.querySelector('.mobile-drawer, .nav-drawer, #nav-drawer');
-      var body     = document.body;
+      var drawer = document.getElementById('nav-links');
+      var toggle = document.querySelector('.menu-toggle');
+      var backdrop = document.getElementById('menu-backdrop');
+      var body = document.body;
 
-      if (drawer && drawer.classList.contains('open')) {
-        drawer.classList.remove('open');
+      if (drawer && drawer.classList.contains('active')) {
+        drawer.classList.remove('active');
       }
+
+      if (toggle) {
+        toggle.setAttribute('aria-expanded','false');
+        toggle.setAttribute('aria-label', t('open'));
+      }
+
       if (backdrop && backdrop.classList.contains('show')) {
         backdrop.classList.remove('show');
       }
-      // Restore scroll in case menu code locked it
+
       body.style.overflow = '';
       body.classList.remove('menu-open');
+
     } catch (e) {}
   }
 
   btn.addEventListener('click', function () {
+
     closeDrawerIfAny();
 
-    // Ensure banner sits at the top document level to avoid stacking-context bugs
     if (banner.parentElement !== document.body) {
       document.body.appendChild(banner);
     }
 
-    // Defensive styles for stubborn mobile browsers
     banner.style.position = 'fixed';
     banner.style.left = '0';
     banner.style.right = '0';
@@ -273,5 +279,7 @@ window.loadMap = function(){
     banner.style.zIndex = '2147483647';
     banner.style.display = 'block';
     banner.setAttribute('aria-hidden', 'false');
+
   }, { passive: true });
+
 })();
