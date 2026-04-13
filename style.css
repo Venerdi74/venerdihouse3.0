@@ -1202,3 +1202,25 @@ header nav .cta {
 #nav-drawer:not(.open) {
   pointer-events: none;
 }
+.local-guides{
+  display:flex;
+  gap:30px;
+  justify-content:flex-start;
+  flex-wrap:wrap;
+  margin-top:20px;
+}
+
+.guide-card{
+  width:300px;
+}
+
+.guide-card img{
+  width:100%;
+  height:auto;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+
+.guide-card h3{
+  margin-top:10px;
+}
