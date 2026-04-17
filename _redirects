@@ -1,5 +1,5 @@
 # 🔁 Redirect pagine principali
-/spiagge-alghero.html        /spiagge-alghero        301
+/spiagge-alghero.html   /spiagge-alghero   301!
 /beaches-alghero.html        /beaches-alghero        301
 /plages-alghero.html         /plages-alghero         301
 /straende-alghero.html       /straende-alghero       301
