@@ -1,0 +1,54 @@
+# 🔁 Redirect pagine principali
+/spiagge-alghero.html        /spiagge-alghero        301
+/beaches-alghero.html        /beaches-alghero        301
+/plages-alghero.html         /plages-alghero         301
+/straende-alghero.html       /straende-alghero       301
+/playas-alghero.html         /playas-alghero         301
+/plaze-alghero.html          /plaze-alghero          301
+/alghero-strandok.html       /alghero-strandok       301
+/plaje-alghero.html          /plaje-alghero          301
+/plaze-alghero-pl.html       /plaze-alghero-pl       301
+
+# 🔁 Rally WRC
+/rally-wrc-alghero.html      /rally-wrc-alghero      301
+/rally-wrc-alghero-en.html   /rally-wrc-alghero-en   301
+/rally-wrc-alghero-fr.html   /rally-wrc-alghero-fr   301
+/rally-wrc-alghero-de.html   /rally-wrc-alghero-de   301
+/rally-wrc-alghero-es.html   /rally-wrc-alghero-es   301
+/rally-wrc-alghero-sk.html   /rally-wrc-alghero-sk   301
+/rally-wrc-alghero-hu.html   /rally-wrc-alghero-hu   301
+/rally-wrc-alghero-ro.html   /rally-wrc-alghero-ro   301
+/rally-wrc-alghero-pl.html   /rally-wrc-alghero-pl   301
+
+# 🔁 Gallery
+/gallery.html                /gallery                301
+/gallery-en.html             /gallery-en             301
+/gallery-fr.html             /gallery-fr             301
+/gallery-de.html             /gallery-de             301
+/gallery-es.html             /gallery-es             301
+/gallery-sk.html             /gallery-sk             301
+/gallery-hu.html             /gallery-hu             301
+/gallery-ro.html             /gallery-ro             301
+/gallery-pl.html             /gallery-pl             301
+
+# 🔁 Link utili
+/link-utili.html             /link-utili             301
+/useful-links.html           /useful-links           301
+/liens-utiles.html           /liens-utiles           301
+/nuetzliche-links.html       /nuetzliche-links       301
+/enlaces-utiles.html         /enlaces-utiles         301
+/uzitocne-odkazy.html        /uzitocne-odkazy        301
+/hasznos-linkek.html         /hasznos-linkek         301
+/linkuri-utile.html          /linkuri-utile          301
+/przydatne-linki.html        /przydatne-linki        301
+
+# 🔁 Homepage lingua (se usi versioni pulite)
+/index.html                  /                       301
+/en.html                     /en                     301
+/fr.html                     /fr                     301
+/de.html                     /de                     301
+/es.html                     /es                     301
+/sk.html                     /sk                     301
+/hu.html                     /hu                     301
+/ro.html                     /ro                     301
+/pl.html                     /pl                     301
