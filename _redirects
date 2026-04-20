@@ -69,3 +69,15 @@
 /hu-thank-you.html     /hu-thank-you     301!
 /ro-thank-you.html     /ro-thank-you     301!
 /pl-thank-you.html     /pl-thank-you     301!
+
+# Privacy pages
+
+/privacy.html               /privacy               301!
+/privacy-en.html            /privacy-en            301!
+/privacy-fr.html            /privacy-fr            301!
+/privacy-de.html            /privacy-de            301!
+/privacy-es.html            /privacy-es            301!
+/privacy-sk.html            /privacy-sk            301!
+/privacy-hu.html            /privacy-hu            301!
+/privacy-ro.html            /privacy-ro            301!
+/privacy-pl.html            /privacy-pl            301!
