@@ -57,3 +57,15 @@
 /hu.html                     /hu                     301!
 /ro.html                     /ro                     301!
 /pl.html                     /pl                     301!
+
+# Thank you pages
+
+/it-thank-you.html     /it-thank-you     301!
+/en-thank-you.html     /en-thank-you     301!
+/fr-thank-you.html     /fr-thank-you     301!
+/de-thank-you.html     /de-thank-you     301!
+/es-thank-you.html     /es-thank-you     301!
+/sk-thank-you.html     /sk-thank-you     301!
+/hu-thank-you.html     /hu-thank-you     301!
+/ro-thank-you.html     /ro-thank-you     301!
+/pl-thank-you.html     /pl-thank-you     301!
