@@ -4,8 +4,9 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Venerdì House – Casă de vacanță în Alghero aproape de mare</title>
-<meta content="Venerdì House este casa ta de vacanță în Alghero. Apartament ideal pentru familii sau cupluri în Sardinia. Rezervă-ți sejurul online cu tarife directe pe site-ul oficial." name="description"/>
+<title>Venerdì House - Apartament de vacanță în Alghero aproape de mare</title>
+<meta content="Venerdì House este un apartament de vacanță în Alghero, aproape de mare și de centrul istoric. 80 mp, Wi-Fi, aer condiționat și rezervare directă." name="description"/>
+<meta content="index, follow" name="robots"/>
 <link href="https://venerdihouse.com/ro" rel="canonical"/>
 <link href="style.css" rel="stylesheet"/>
 <link as="image" fetchpriority="high" href="images/hero.webp" rel="preload"/>
@@ -16,6 +17,9 @@
 <meta content="https://venerdihouse.com/images/hero.webp" property="og:image"/>
 <meta content="https://venerdihouse.com/ro" property="og:url"/>
 <meta content="website" property="og:type"/>
+<meta content="ro_RO" property="og:locale"/>
+<meta content="Venerdì House" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
 <!-- JSON-LD -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -39,7 +43,6 @@
     "https://wa.me/393514012174"
   ]
 }</script>
-<link as="font" crossorigin="" href="/fonts/Manrope-VariableFont_wght.ttf" rel="preload" type="font/ttf"/>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://venerdihouse.com/" rel="alternate" hreflang="it"/>
 <link href="https://venerdihouse.com/en" rel="alternate" hreflang="en"/>
@@ -53,12 +56,13 @@
 <link href="https://venerdihouse.com/" rel="alternate" hreflang="x-default"/>
 </head>
 <body>
+<a class="skip-link" href="#main">Sari la conținut</a>
 <header>
 <div class="logo">
 <img alt="Venerdì House Logo" src="images/logo.png"/>
 </div>
 <nav>
-<button aria-expanded="false" aria-label="Deschide meniul" class="menu-toggle">
+<button aria-expanded="false" aria-label="Deschide meniul" class="menu-toggle" type="button">
 <div></div>
 <div></div>
 <div></div>
@@ -68,72 +72,76 @@
 <button aria-label="Închide meniul" class="drawer-close" title="Închide" type="button">×</button>
 </li>
 <li class="mobile-only">
-<img alt="logo" class="menu-image" src="images/logo.png"/></li>
+<img alt="Logo Venerdì House" class="menu-image" src="images/logo.png"/></li>
 <li><a href="#home">Acasă</a></li>
 <li><a href="#about">Despre noi</a></li>
 <li><a href="#apartment">Apartament</a></li>
-<li><a href="gallery-ro.html">Galerie</a></li>
+<li><a href="/gallery-ro">Galerie</a></li>
 <li><a href="#rooms">Camere</a></li>
 <li><a href="#availability">Disponibilitate</a></li>
 <li><a href="#map">Cum ne găsești</a></li>
 <li><a href="#contacts">Contact</a></li>
-<li><a href="linkuri-utile.html">Linkuri utile</a></li>
+<li><a href="/linkuri-utile">Linkuri utile</a></li>
 </ul>
 <div class="language-dropdown">
-<button aria-label="Alege limba" class="dropdown-toggle">
+<button aria-label="Alege limba" class="dropdown-toggle" type="button">
 <img alt="RO" src="images/flags/ro.svg"/> <span aria-hidden="true">▼</span></button>
 <div class="dropdown-menu">
-<a href="index.html"><img alt="IT" src="images/flags/it.svg"/> Italiano</a>
-<a href="en.html"><img alt="EN" src="images/flags/gb.svg"/> English</a>
-<a href="fr.html"><img alt="FR" src="images/flags/fr.svg"/> Français</a>
-<a href="de.html"><img alt="DE" src="images/flags/de.svg"/> Deutsch</a>
-<a href="es.html"><img alt="ES" src="images/flags/es.svg"/> Español</a>
-<a href="sk.html"><img alt="SK" src="images/flags/sk.svg"/> Slovenský</a>
-<a href="hu.html"><img alt="HU" src="images/flags/hu.svg"/> Magyar</a>
-<a href="ro.html"><img alt="RO" src="images/flags/ro.svg"/> Română</a>
-<a href="pl.html"><img alt="PL" src="images/flags/pl.svg"/> Polski</a>
+<a href="/"><img alt="IT" src="images/flags/it.svg"/> Italiano</a>
+<a href="/en"><img alt="EN" src="images/flags/gb.svg"/> English</a>
+<a href="/fr"><img alt="FR" src="images/flags/fr.svg"/> Français</a>
+<a href="/de"><img alt="DE" src="images/flags/de.svg"/> Deutsch</a>
+<a href="/es"><img alt="ES" src="images/flags/es.svg"/> Español</a>
+<a href="/sk"><img alt="SK" src="images/flags/sk.svg"/> Slovenský</a>
+<a href="/hu"><img alt="HU" src="images/flags/hu.svg"/> Magyar</a>
+<a href="/ro"><img alt="RO" src="images/flags/ro.svg"/> Română</a>
+<a href="/pl"><img alt="PL" src="images/flags/pl.svg"/> Polski</a>
 </div>
 </div>
 </nav>
 <!-- Backdrop to close the mobile drawer -->
 <div aria-hidden="true" class="menu-backdrop" id="menu-backdrop"></div>
 </header>
+<main id="main" tabindex="-1">
 <section class="hero" id="home">
-<!-- layer immagine animata -->
 <div aria-hidden="true" class="hero-image"></div>
-<!-- contenuto testo -->
 <div class="hero-inner">
 <h1>Bun venit la Venerdì House</h1>
-<p>Casa ta de vacanță în Alghero</p>
+<p>Apartamentul tău de vacanță în Alghero, aproape de mare și de centrul istoric</p>
 </div>
 </section>
 <section class="section" id="about">
 <h2>Despre noi</h2>
-<p><strong>Venerdì House</strong> este o casă de vacanță situată în inima orașului Alghero, ideală pentru familii și cupluri. Se află la doar câteva minute de centrul istoric și la câțiva pași de plajele Lido și San Giovanni. Un loc în care să te simți ca acasă.</p>
-<p><strong>Planifică-ți acum sejurul în Sardinia și profită de cele mai bune tarife rezervate rezervărilor directe pe site-ul nostru oficial.</strong></p>
+<p><strong>Venerdì House</strong> este un apartament de vacanță în Alghero, gândit pentru familii și cupluri care doresc să stea într-o zonă comodă, la doar câteva minute de centrul istoric și aproape de plaja San Giovanni.</p>
+<p>Apartamentul oferă spații primitoare și practice pentru a te bucura de Sardinia în ritmul tău, cu acces ușor la mare, oraș și serviciile din apropiere.</p>
+<p><strong>Rezervând direct pe site-ul nostru oficial, beneficiezi de contact direct și de tarife rezervate.</strong></p>
 </section>
-<div style="text-align: center; margin-top: 20px;">
+<div class="cta-wrapper">
 <a class="contact-button" href="#availability">Rezervă acum</a>
 </div>
 <section class="section" id="apartment">
 <h2>Apartamentul nostru</h2>
-<p>Apartamentul <strong>Venerdì House</strong> este un spațiu generos de 80 m² situat la etajul al doilea cu lift. Două dormitoare, living cu bucătărie echipată, baie și balcoane. Aer condiționat, Wi‑Fi gratuit și toate facilitățile pentru un sejur plăcut în Alghero.</p>
+<p><strong>Venerdì House</strong> este un apartament de vacanță de aproximativ 80 mp, situat la etajul al doilea cu lift, ideal pentru cei care caută un sejur confortabil și relaxant în Alghero.</p>
+<p>Spațiile includ două dormitoare, living, bucătărie echipată, baie și balcoane, cu o compartimentare gândită pentru a primi cât mai bine atât cupluri, cât și familii.</p>
+<p>Aerul condiționat, Wi-Fi-ul gratuit și apropierea de mare și de centrul istoric fac din Venerdì House o alegere practică și plăcută pentru a descoperi Alghero în voie.</p>
 </section>
 <section class="section" id="gallery">
 <h2>Galerie</h2>
-<div style="text-align: center;">
-<img alt="Living Venerdì House" loading="lazy" src="images/foto1.webp" style="max-width: 100%; height: auto; border-radius: 10px;"/>
+<div class="gallery-preview">
+<img alt="Living Venerdì House" loading="lazy" src="images/foto1.webp" />
 <br/><br/>
-<a class="gallery-button" href="gallery-ro.html">Vezi galeria</a>
+<a class="gallery-button" href="/gallery-ro">Vezi galeria</a>
 </div>
 </section>
 <section class="section" id="rooms">
 <h2>Camerele noastre</h2>
-<p>Oferim spații de cazare primitoare. Dormitorul matrimonial este foarte spațios. Al doilea dormitor are paturi de o singură persoană care pot fi unite într-un pat dublu.</p>
+<p>Camerele de la Venerdì House sunt gândite pentru a oferi confort, liniște și flexibilitate pe tot parcursul sejurului.</p>
+<p>Dormitorul matrimonial este spațios și luminos, ideal pentru cei care doresc un spațiu primitor și relaxant după o zi petrecută între mare și oraș.</p>
+<p>A doua cameră are paturi separate care pot fi unite într-un pat dublu, o soluție practică pentru cupluri, familii sau grupuri mici.</p>
 </section>
 <section class="section" id="availability">
 <h2>Cere disponibilitatea</h2>
-<form action="/ro-thank-you.html" data-netlify="true" method="POST" name="contact-ro" netlify-honeypot="bot-field">
+<form action="/ro-thank-you" data-netlify="true" method="POST" name="contact-ro" netlify-honeypot="bot-field">
 <input name="form-name" type="hidden" value="contact-ro"/>
 <p hidden>
 <label>
@@ -157,30 +165,32 @@ Nu completa acest câmp:
 <textarea id="messaggio" name="messaggio" rows="4"></textarea>
 <label class="privacy-box">
 <input name="privacy" required="" type="checkbox" value="1"/>
-<span>Sunt de acord cu <a href="privacy-ro.html">Politica de confidențialitate</a></span>
+<span>Sunt de acord cu <a href="/privacy-ro">Politica de confidențialitate</a></span>
 </label>
 <button class="contact-button" type="submit">Trimite cererea</button>
 </form>
 </section>
 <section class="section" id="map">
 <h2>Cum ne găsești</h2>
-<p>Ne găsești pe <strong>Via Pasquale Paoli, 103 – 07041 Alghero SS</strong>, Sardinia.</p>
+<p>Venerdì House se află la <strong>Via Pasquale Paoli, 103 - 07041 Alghero SS</strong>, într-una dintre cele mai comode zone din Alghero, între mare, centrul orașului și servicii.</p>
+<p>Apartamentul este la aproximativ <strong>100 de metri de plajele Lido și San Giovanni</strong> și la aproximativ <strong>700 de metri de centrul istoric</strong>, astfel încât poți descoperi orașul ușor și pe jos.</p>
+<p>În apropiere se găsesc și stații de autobuz, supermarketuri, baruri și restaurante, pentru un sejur și mai practic și plăcut.</p>
 <div class="map-placeholder" id="map-placeholder">
 <p>Din motive de confidențialitate, Google Maps este blocat până la acordul tău.</p>
-<button id="accept-map">Activează harta</button>
+<button id="accept-map" type="button">Activează harta</button>
 </div>
 </section>
 <section class="section" id="contacts">
 <h2>Contact</h2>
-<p style="display: flex; gap: 15px; justify-content: center; align-items: center;">
+<p class="contacts-row">
 <a aria-label="Trimite un e‑mail către Venerdì House" href="mailto:venerdihouse@gmail.com" rel="noopener noreferrer" target="_blank">
-<img alt="E‑mail" class="contact-icon" src="images/email.png"/>
+<img alt="Email" class="contact-icon" height="48" src="images/email.png" width="48"/>
 </a>
 <a aria-label="Contactează Venerdì House pe WhatsApp" href="https://wa.me/393514012174" rel="noopener noreferrer" target="_blank">
-<img alt="WhatsApp" class="contact-icon" src="images/whatsapp.png"/>
+<img alt="WhatsApp" class="contact-icon" height="48" src="images/whatsapp.png" width="48"/>
 </a>
 <a aria-label="Urmărește Venerdì House pe Instagram" href="https://www.instagram.com/venerdihouse" rel="noopener noreferrer" target="_blank">
-<img alt="Instagram" class="contact-icon" src="images/instagram.png"/>
+<img alt="Instagram" class="contact-icon" height="48" src="images/instagram.png" width="48"/>
 </a>
 </p>
 </section>
@@ -190,7 +200,7 @@ Nu completa acest câmp:
   <div class="local-guides">
 
     <div class="guide-card">
-      <a href="plaje-alghero">
+      <a href="/plaje-alghero">
         <img 
           src="images/hero.webp"
           alt="Plajele din Alghero – vedere panoramică"
@@ -203,11 +213,11 @@ Nu completa acest câmp:
         Descoperă cele mai frumoase plaje din Alghero, precum Maria Pia, Le Bombarde, Mugoni și Porto Ferro.
       </p>
 
-      <a class="gallery-button" href="plaje-alghero">Descoperă mai mult</a>
+      <a class="gallery-button" href="/plaje-alghero">Descoperă mai mult</a>
     </div>
 
     <div class="guide-card">
-      <a href="rally-wrc-alghero-ro">
+      <a href="/rally-wrc-alghero-ro">
         <img 
           src="images/rally-italia-sardegna-alghero.webp"
           alt="Rally Italia Sardegna WRC la Alghero"
@@ -220,24 +230,24 @@ Nu completa acest câmp:
         Descoperă Rally Italia Sardegna 2026 la Alghero, datele evenimentului și unde să te cazezi în oraș.
       </p>
 
-      <a class="gallery-button" href="rally-wrc-alghero-ro">Descoperă evenimentul</a>
+      <a class="gallery-button" href="/rally-wrc-alghero-ro">Descoperă evenimentul</a>
     </div>
 
   </div>
 </section>
+</main>
 <footer>
 <p>© 2026 Venerdì House - Alghero. CIN IT090003C2000S0496 Toate drepturile rezervate.</p>
 <button class="link-like" id="open-cookie-settings" type="button">Setări cookie</button>
 </footer>
 <div class="cookie-banner" id="cookie-banner">
   Acest site folosește cookie-uri tehnice și, cu acordul tău, cookie-uri ale terților (ex. Google Maps, Instagram) pentru a îmbunătăți experiența de navigare.
-  <a href="privacy-ro.html">Citește Politica de Confidențialitate</a>.
+  <a href="/privacy-ro">Citește Politica de Confidențialitate</a>.
   <div class="cookie-banner-buttons">
-    <button id="accept-cookies">Acceptă</button>
-    <button id="reject-cookies">Refuză</button>
+    <button id="accept-cookies" type="button">Acceptă</button>
+    <button id="reject-cookies" type="button">Refuză</button>
   </div>
 </div>
-<!-- Script personalizzato -->
-<script defer="" src="main.js"></script>
+<script defer src="main.js"></script>
 </body>
 </html>
