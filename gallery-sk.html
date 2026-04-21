@@ -4,14 +4,17 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Venerdì House - Fotogaléria</title>
-<meta content="Fotogaléria Venerdì House, váš dovolenkový dom v Alghere. Objavte každý priestor na fotografiách." name="description"/> 
+<title>Galéria Venerdì House - Fotky apartmánu v Alghere</title>
+<meta content="Prezrite si galériu Venerdì House v Alghere: fotografie apartmánu, izieb, obývacej časti a interiérov blízko mora a historického centra." name="description"/> 
 <link href="https://venerdihouse.com/gallery-sk" rel="canonical"/>
 <meta property="og:title" content="Venerdì House - Fotogaléria"/>
 <meta property="og:description" content="Fotogaléria Venerdì House, váš dovolenkový dom v Alghere. Objavte každý priestor na fotografiách."/>
 <meta property="og:image" content="https://venerdihouse.com/images/foto1.webp"/>
 <meta property="og:url" content="https://venerdihouse.com/gallery-sk"/>
 <meta property="og:type" content="website"/>
+<meta content="sk_SK" property="og:locale"/>
+<meta content="Venerdì House" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
 <link href="style.css" rel="stylesheet"/>
 <link href="images/favicon.ico" rel="icon" type="image/x-icon"/>
         <!-- Lightbox CSS --> 
@@ -29,13 +32,13 @@
 <link href="https://venerdihouse.com/gallery" hreflang="x-default" rel="alternate"/>
 </head>
 <body>
-        <a class="skip-link" href="#gallery">Preskočiť na obsah</a>
+        <a class="skip-link" href="#main">Preskočiť na obsah</a>
 <header>
 <div class="logo">
-<a href="sk.html"><img alt="Venerdì House Logo" src="images/logo.png"/></a>
+<a href="/sk"><img alt="Venerdì House Logo" src="images/logo.png"/></a>
 </div>
 <nav>
-<button aria-expanded="false" aria-label="Otvoriť menu" class="menu-toggle">
+<button aria-expanded="false" aria-label="Otvoriť menu" class="menu-toggle" type="button">
 <div></div>
 <div></div>
 <div></div>
@@ -45,36 +48,37 @@
 <button aria-label="Zavrieť menu" class="drawer-close" title="Zavrieť" type="button">×</button>
 </li>
 <li class="mobile-only">
-<img alt="logo" class="menu-image" src="images/logo.png"/></li>
-<li><a href="sk.html#home">Domov</a></li>
-<li><a href="sk.html#about">O nás</a></li>
-<li><a href="sk.html#apartment">Apartmán</a></li>
-<li><a aria-current="page" href="gallery-sk.html">Galéria</a></li>
-<li><a href="sk.html#rooms">Izby</a></li>
-<li><a href="sk.html#availability">Dostupnosť</a></li>
-<li><a href="sk.html#map">Ako nás nájdete</a></li>
-<li><a href="sk.html#contacts">Kontakt</a></li>
-<li><a href="uzitocne-odkazy.html">Užitočné odkazy</a></li>
+<img alt="Logo Venerdì House" class="menu-image" src="images/logo.png"/></li>
+<li><a href="/sk#home">Domov</a></li>
+<li><a href="/sk#about">O nás</a></li>
+<li><a href="/sk#apartment">Apartmán</a></li>
+<li><a aria-current="page" href="/gallery-sk">Galéria</a></li>
+<li><a href="/sk#rooms">Izby</a></li>
+<li><a href="/sk#availability">Dostupnosť</a></li>
+<li><a href="/sk#map">Ako nás nájdete</a></li>
+<li><a href="/sk#contacts">Kontakt</a></li>
+<li><a href="/uzitocne-odkazy">Užitočné odkazy</a></li>
 </ul>
 <div class="language-dropdown">
-<button aria-label="Vybrať jazyk" class="dropdown-toggle">
+<button aria-label="Vybrať jazyk" class="dropdown-toggle" type="button">
 <img alt="SK" src="images/flags/sk.svg"/> ▼
         </button>
 <div class="dropdown-menu">
-<a href="gallery.html"><img alt="IT" src="images/flags/it.svg"/> Italiano</a>
-<a href="gallery-en.html"><img alt="EN" src="images/flags/gb.svg"/> English</a>
-<a href="gallery-fr.html"><img alt="FR" src="images/flags/fr.svg"/> Français</a>
-<a href="gallery-de.html"><img alt="DE" src="images/flags/de.svg"/> Deutsch</a>
-<a href="gallery-es.html"><img alt="ES" src="images/flags/es.svg"/> Español</a>
-<a href="gallery-sk.html"><img alt="SK" src="images/flags/sk.svg"/> Slovenský</a>
-<a href="gallery-hu.html"><img alt="HU" src="images/flags/hu.svg"/> Magyar</a>
-<a href="gallery-ro.html"><img alt="RO" src="images/flags/ro.svg"/> Română</a>
-<a href="gallery-pl.html"><img alt="PL" src="images/flags/pl.svg"/> Polski</a>
+<a href="/gallery"><img alt="IT" src="images/flags/it.svg"/> Italiano</a>
+<a href="/gallery-en"><img alt="EN" src="images/flags/gb.svg"/> English</a>
+<a href="/gallery-fr"><img alt="FR" src="images/flags/fr.svg"/> Français</a>
+<a href="/gallery-de"><img alt="DE" src="images/flags/de.svg"/> Deutsch</a>
+<a href="/gallery-es"><img alt="ES" src="images/flags/es.svg"/> Español</a>
+<a href="/gallery-sk"><img alt="SK" src="images/flags/sk.svg"/> Slovenský</a>
+<a href="/gallery-hu"><img alt="HU" src="images/flags/hu.svg"/> Magyar</a>
+<a href="/gallery-ro"><img alt="RO" src="images/flags/ro.svg"/> Română</a>
+<a href="/gallery-pl"><img alt="PL" src="images/flags/pl.svg"/> Polski</a>
 </div>
 </div>
 </nav>
 <div aria-hidden="true" class="menu-backdrop" id="menu-backdrop"></div>
 </header>
+<main id="main" tabindex="-1">
 <section class="hero" id="home">
 <div aria-hidden="true" class="hero-image"></div>
 <div class="hero-inner">
@@ -139,14 +143,16 @@
 <a data-lightbox="gallery" data-title="Detail kuchyne Venerdì House" href="images/foto18.webp">
 <img alt="Detail kuchyne" loading="lazy" src="images/foto18.webp"/>
 </a>
-<!-- Aggiungi qui tutte le altre immagini -->
 </div>
-<div style="text-align: center; margin-top: 20px;">
-<a class="contact-button" href="sk.html#availability">Rezervovať teraz</a>
+<div class="button-wrapper">
+<a class="contact-button" href="/sk#availability">Rezervovať teraz</a>
 </div>
-</section> <footer>
+</section>
+</main>
+<footer>
 <p>© 2026 Venerdì House - Alghero. CIN IT090003C2000S0496 Všetky práva vyhradené.</p>
-</footer> <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-<script defer="" src="main.js"></script>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<script defer src="main.js"></script>
 </body>
 </html>
