@@ -2,7 +2,7 @@
 (function(){
   try{
     const userLang = navigator.language || navigator.userLanguage;
-    const langMap = { it:'index.html', en:'en.html', fr:'fr.html', de:'de.html', es:'es.html', sk:'sk.html', hu:'hu.html', ro:'ro.html', pl:'pl.html' };
+    const langMap = { it:'/', en:'/en', fr:'/fr', de:'/de', es:'/es', sk:'/sk', hu:'/hu', ro:'/ro', pl:'/pl' };
     const short = (userLang || 'it').split('-')[0];
     if ((location.pathname.endsWith('index.html') || location.pathname === '/') && langMap[short] && short !== 'it') {
       location.href = langMap[short];
@@ -69,11 +69,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const btn = langDropdown.querySelector('.dropdown-toggle');
     const menu = langDropdown.querySelector('.dropdown-menu');
     if (btn && menu) {
+      btn.setAttribute('aria-expanded', 'false');
       btn.addEventListener('click', (e) => {
         e.stopPropagation();
+        const willOpen = !menu.classList.contains('show');
         menu.classList.toggle('show');
+        btn.setAttribute('aria-expanded', String(willOpen));
       });
-      document.addEventListener('click', () => menu.classList.remove('show'));
+      document.addEventListener('click', () => {
+        menu.classList.remove('show');
+        btn.setAttribute('aria-expanded', 'false');
+      });
     }
   }
 
