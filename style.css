@@ -513,6 +513,85 @@ form a {
 
 }
 
+.cta-wrapper,
+.gallery-preview,
+.button-wrapper,
+.contacts-row {
+
+  text-align: center;
+
+}
+
+.cta-wrapper {
+
+  margin-top: 20px;
+
+}
+
+.button-wrapper {
+
+  margin-top: 30px;
+
+}
+
+.gallery-preview img {
+
+  display: block;
+
+  max-width: 100%;
+
+  height: auto;
+
+  margin: 0 auto;
+
+  border-radius: 10px;
+
+}
+
+.contacts-row {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 15px;
+
+  flex-wrap: wrap;
+
+}
+
+.thank-you-page {
+
+  text-align: center;
+
+  padding: 50px 20px;
+
+}
+
+.thank-you-logo {
+
+  max-width: 250px;
+
+  width: 100%;
+
+  height: auto;
+
+}
+
+.privacy-cta {
+
+  margin-top: 40px;
+
+}
+
+.rally-cta {
+
+  margin-top: 25px;
+
+}
+
 /* MAP PLACEHOLDER */
 
 .map-placeholder {

@@ -1,12 +1,4 @@
 User-agent: *
 
-# Blocca tutte le pagine di ringraziamento
-Disallow: /thank-you
-Disallow: /*-thank-you
-
-# Blocca tutte le pagine privacy
-Disallow: /privacy
-Disallow: /privacy*
-
 # Sitemap
 Sitemap: https://venerdihouse.com/sitemap.xml
