@@ -6,7 +6,7 @@
 /straende-alghero.html       /straende-alghero       301!
 /playas-alghero.html         /playas-alghero         301!
 /plaze-alghero.html          /plaze-alghero          301!
-/alghero-strandok.html       /alghero-strandok       301!
+/strandok-alghero.html      /strandok-alghero      301!
 /plaje-alghero.html          /plaje-alghero          301!
 /plaze-alghero-pl.html       /plaze-alghero-pl       301!
 
@@ -40,6 +40,10 @@
 /useful-links.html           /useful-links           301!
 /liens-utiles.html           /liens-utiles           301!
 /nuetzliche-links.html       /nuetzliche-links       301!
+/nutzliche-links             /nuetzliche-links       301!
+/nutzliche-links.html        /nuetzliche-links       301!
+/link-uri-utile             /linkuri-utile          301!
+/link-uri-utile.html        /linkuri-utile          301!
 /enlaces-utiles.html         /enlaces-utiles         301!
 /uzitocne-odkazy.html        /uzitocne-odkazy        301!
 /hasznos-linkek.html         /hasznos-linkek         301!
@@ -61,6 +65,7 @@
 # Thank you pages
 
 /it-thank-you.html     /it-thank-you     301!
+/thank-you.html        /thank-you        301!
 /en-thank-you.html     /en-thank-you     301!
 /fr-thank-you.html     /fr-thank-you     301!
 /de-thank-you.html     /de-thank-you     301!
