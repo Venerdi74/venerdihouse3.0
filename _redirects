@@ -1,5 +1,15 @@
 # Redirect pagine principali (senza .html)
 
+/cosa-vedere-alghero.html    /cosa-vedere-alghero    301!
+/what-to-see-alghero.html    /what-to-see-alghero    301!
+/que-voir-alghero.html    /que-voir-alghero    301!
+/sehenswuerdigkeiten-alghero.html    /sehenswuerdigkeiten-alghero    301!
+/que-ver-alghero.html    /que-ver-alghero    301!
+/co-vidiet-alghero.html    /co-vidiet-alghero    301!
+/mit-nezz-meg-algheroban.html    /mit-nezz-meg-algheroban    301!
+/ce-sa-vezi-alghero.html    /ce-sa-vezi-alghero    301!
+/co-zobaczyc-alghero.html    /co-zobaczyc-alghero    301!
+
 /spiagge-alghero.html        /spiagge-alghero        301!
 /beaches-alghero.html        /beaches-alghero        301!
 /plages-alghero.html         /plages-alghero         301!
@@ -87,10 +97,18 @@
 /privacy-ro.html            /privacy-ro            301!
 /privacy-pl.html            /privacy-pl            301!
 /privacy_en.html            /privacy-en            301!
+/privacy_en                 /privacy-en            301!
 /privacy_fr.html            /privacy-fr            301!
+/privacy_fr                 /privacy-fr            301!
 /privacy_de.html            /privacy-de            301!
+/privacy_de                 /privacy-de            301!
 /privacy_es.html            /privacy-es            301!
+/privacy_es                 /privacy-es            301!
 /privacy_sk.html            /privacy-sk            301!
+/privacy_sk                 /privacy-sk            301!
 /privacy_hu.html            /privacy-hu            301!
+/privacy_hu                 /privacy-hu            301!
 /privacy_ro.html            /privacy-ro            301!
+/privacy_ro                 /privacy-ro            301!
 /privacy_pl.html            /privacy-pl            301!
+/privacy_pl                 /privacy-pl            301!
