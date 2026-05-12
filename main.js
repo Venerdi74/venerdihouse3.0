@@ -1,14 +1,3 @@
-/* ===================== REDIRECT LINGUA (home) ===================== */
-(function(){
-  try{
-    const userLang = navigator.language || navigator.userLanguage;
-    const langMap = { it:'/', en:'/en', fr:'/fr', de:'/de', es:'/es', sk:'/sk', hu:'/hu', ro:'/ro', pl:'/pl' };
-    const short = (userLang || 'it').split('-')[0];
-    if ((location.pathname.endsWith('index.html') || location.pathname === '/') && langMap[short] && short !== 'it') {
-      location.href = langMap[short];
-    }
-  }catch(e){}
-})();
 // === i18n minimale (multi-lingua) ===
 const LANG = (document.documentElement.lang || 'it').slice(0,2);
 const I18N = {
