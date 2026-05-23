@@ -106,7 +106,7 @@ window.loadMap = function(){
   const mapContainer = document.getElementById('map-placeholder');
   if (!mapContainer) return;
   if (mapContainer.dataset.loaded === 'true') return;
-  mapContainer.innerHTML = '<iframe src="https://www.google.com/maps?q=Via+Pasquale+Paoli,+103,+07041+Alghero+SS&output=embed" width="100%" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+  mapContainer.innerHTML = '<iframe src="https://www.google.com/maps?q=40.56821,8.31988&z=19&output=embed" width="100%" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
   mapContainer.dataset.loaded = 'true';
 };
 
