@@ -1,3 +1,11 @@
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Strict-Transport-Security: max-age=31536000
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; frame-src https://www.google.com https://*.google.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests
+
 /privacy
   X-Robots-Tag: noindex, follow
 
@@ -105,3 +113,102 @@
 
 /thank-you.html
   X-Robots-Tag: noindex, follow
+
+/link-utili
+  X-Robots-Tag: noindex, follow
+
+/useful-links
+  X-Robots-Tag: noindex, follow
+
+/liens-utiles
+  X-Robots-Tag: noindex, follow
+
+/nuetzliche-links
+  X-Robots-Tag: noindex, follow
+
+/enlaces-utiles
+  X-Robots-Tag: noindex, follow
+
+/uzitocne-odkazy
+  X-Robots-Tag: noindex, follow
+
+/hasznos-linkek
+  X-Robots-Tag: noindex, follow
+
+/linkuri-utile
+  X-Robots-Tag: noindex, follow
+
+/przydatne-linki
+  X-Robots-Tag: noindex, follow
+
+/link-utili.html
+  X-Robots-Tag: noindex, follow
+
+/useful-links.html
+  X-Robots-Tag: noindex, follow
+
+/liens-utiles.html
+  X-Robots-Tag: noindex, follow
+
+/nuetzliche-links.html
+  X-Robots-Tag: noindex, follow
+
+/enlaces-utiles.html
+  X-Robots-Tag: noindex, follow
+
+/uzitocne-odkazy.html
+  X-Robots-Tag: noindex, follow
+
+/hasznos-linkek.html
+  X-Robots-Tag: noindex, follow
+
+/linkuri-utile.html
+  X-Robots-Tag: noindex, follow
+
+/przydatne-linki.html
+  X-Robots-Tag: noindex, follow
+
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/vendor/*
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/style.css
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/main.js
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/gallery-lightbox.js
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate

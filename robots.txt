@@ -1,4 +1,21 @@
 User-agent: *
+Allow: /
+
+# Search and answer-engine crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
 
 # Sitemap
 Sitemap: https://venerdihouse.com/sitemap.xml
