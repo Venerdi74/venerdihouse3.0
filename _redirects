@@ -10,27 +10,37 @@
 /ce-sa-vezi-alghero.html    /ce-sa-vezi-alghero    301!
 /co-zobaczyc-alghero.html    /co-zobaczyc-alghero    301!
 
+/dove-mangiare-alghero.html  /dove-mangiare-alghero  301!
+/where-to-eat-alghero.html   /where-to-eat-alghero   301!
+/ou-manger-alghero.html      /ou-manger-alghero      301!
+/wo-essen-alghero.html       /wo-essen-alghero       301!
+/kde-sa-najest-alghero.html  /kde-sa-najest-alghero  301!
+/hol-erdemes-enni-algheroban.html  /hol-erdemes-enni-algheroban  301!
+/donde-comer-alghero.html    /donde-comer-alghero    301!
+/unde-sa-mananci-alghero.html  /unde-sa-mananci-alghero  301!
+/gdzie-zjesc-alghero.html      /gdzie-zjesc-alghero      301!
+/guide-alghero.html          /guide-alghero          301!
+/alghero-guides.html         /alghero-guides         301!
+/guides-alghero.html         /guides-alghero         301!
+/alghero-reisefuehrer.html   /alghero-reisefuehrer   301!
+/guias-alghero.html          /guias-alghero          301!
+/sprievodcovia-alghero.html  /sprievodcovia-alghero  301!
+/alghero-utmutatok.html      /alghero-utmutatok      301!
+/ghiduri-alghero.html        /ghiduri-alghero        301!
+/przewodniki-alghero.html    /przewodniki-alghero    301!
+
+/ironman-70-3-alghero-2027.html  /ironman-70-3-alghero-2027  301!
+/ironman-70-3-alghero-2027-en.html  /ironman-70-3-alghero-2027-en  301!
+
 /spiagge-alghero.html        /spiagge-alghero        301!
 /beaches-alghero.html        /beaches-alghero        301!
 /plages-alghero.html         /plages-alghero         301!
 /straende-alghero.html       /straende-alghero       301!
 /playas-alghero.html         /playas-alghero         301!
 /plaze-alghero.html          /plaze-alghero          301!
-/strandok-alghero.html      /strandok-alghero      301!
+/strandok-alghero.html       /strandok-alghero       301!
 /plaje-alghero.html          /plaje-alghero          301!
 /plaze-alghero-pl.html       /plaze-alghero-pl       301!
-
-# Rally WRC
-
-/rally-wrc-alghero.html      /rally-wrc-alghero      301!
-/rally-wrc-alghero-en.html   /rally-wrc-alghero-en   301!
-/rally-wrc-alghero-fr.html   /rally-wrc-alghero-fr   301!
-/rally-wrc-alghero-de.html   /rally-wrc-alghero-de   301!
-/rally-wrc-alghero-es.html   /rally-wrc-alghero-es   301!
-/rally-wrc-alghero-sk.html   /rally-wrc-alghero-sk   301!
-/rally-wrc-alghero-hu.html   /rally-wrc-alghero-hu   301!
-/rally-wrc-alghero-ro.html   /rally-wrc-alghero-ro   301!
-/rally-wrc-alghero-pl.html   /rally-wrc-alghero-pl   301!
 
 # Gallery
 
@@ -50,15 +60,19 @@
 /useful-links.html           /useful-links           301!
 /liens-utiles.html           /liens-utiles           301!
 /nuetzliche-links.html       /nuetzliche-links       301!
-/nutzliche-links             /nuetzliche-links       301!
-/nutzliche-links.html        /nuetzliche-links       301!
-/link-uri-utile             /linkuri-utile          301!
-/link-uri-utile.html        /linkuri-utile          301!
 /enlaces-utiles.html         /enlaces-utiles         301!
 /uzitocne-odkazy.html        /uzitocne-odkazy        301!
 /hasznos-linkek.html         /hasznos-linkek         301!
 /linkuri-utile.html          /linkuri-utile          301!
 /przydatne-linki.html        /przydatne-linki        301!
+
+# Alias legacy / varianti digitate senza file locale.
+# Su Netlify sono sorgenti valide: servono a evitare 404 da vecchi link o URL scritti in modo diverso.
+
+/nutzliche-links             /nuetzliche-links       301!
+/nutzliche-links.html        /nuetzliche-links       301!
+/link-uri-utile              /linkuri-utile          301!
+/link-uri-utile.html         /linkuri-utile          301!
 
 # Home lingue
 
@@ -76,7 +90,6 @@
 
 /it-thank-you.html     /it-thank-you     301!
 /thank-you.html        /thank-you        301!
-/en-thank-you.html     /en-thank-you     301!
 /fr-thank-you.html     /fr-thank-you     301!
 /de-thank-you.html     /de-thank-you     301!
 /es-thank-you.html     /es-thank-you     301!
@@ -84,6 +97,11 @@
 /hu-thank-you.html     /hu-thank-you     301!
 /ro-thank-you.html     /ro-thank-you     301!
 /pl-thank-you.html     /pl-thank-you     301!
+
+# Alias legacy per vecchia pagina di ringraziamento inglese.
+
+/en-thank-you.html     /thank-you        301!
+/en-thank-you          /thank-you        301!
 
 # Privacy pages
 
@@ -96,6 +114,9 @@
 /privacy-hu.html            /privacy-hu            301!
 /privacy-ro.html            /privacy-ro            301!
 /privacy-pl.html            /privacy-pl            301!
+
+# Alias legacy con underscore per vecchie URL privacy.
+
 /privacy_en.html            /privacy-en            301!
 /privacy_en                 /privacy-en            301!
 /privacy_fr.html            /privacy-fr            301!
@@ -112,3 +133,10 @@
 /privacy_ro                 /privacy-ro            301!
 /privacy_pl.html            /privacy-pl            301!
 /privacy_pl                 /privacy-pl            301!
+/ironman-70-3-alghero-2027-fr.html  /ironman-70-3-alghero-2027-fr  301!
+/ironman-70-3-alghero-2027-de.html  /ironman-70-3-alghero-2027-de  301!
+/ironman-70-3-alghero-2027-es.html  /ironman-70-3-alghero-2027-es  301!
+/ironman-70-3-alghero-2027-sk.html  /ironman-70-3-alghero-2027-sk  301!
+/ironman-70-3-alghero-2027-hu.html  /ironman-70-3-alghero-2027-hu  301!
+/ironman-70-3-alghero-2027-ro.html  /ironman-70-3-alghero-2027-ro  301!
+/ironman-70-3-alghero-2027-pl.html  /ironman-70-3-alghero-2027-pl  301!
